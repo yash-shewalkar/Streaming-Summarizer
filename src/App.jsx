@@ -2,6 +2,10 @@ import React from "react";
 import Split from "react-split";
 
 const App = () => {
+
+  const Live_Stream = import.meta.env.VITE_LIVE_STREAM_LINK;
+  const Live_Chat = import.meta.env.VITE_LIVE_CHAT_LINK;
+
   return (
     <div className="h-screen w-screen bg-[#0F172A] text-white flex flex-col">
       {/* Header */}
@@ -11,10 +15,10 @@ const App = () => {
 
       {/* Main Content */}
       <Split
-        sizes={[65, 35]} // Default sizes in percentages
-        minSize={200} // Minimum width for each pane
+        sizes={[65, 35]} 
+        minSize={200} 
         expandToMin={true}
-        gutterSize={8} // Width of the draggable gutter
+        gutterSize={8} 
         gutterAlign="center"
         className="flex-1 flex cursor-col-resize"
       >
@@ -22,7 +26,7 @@ const App = () => {
         <div className="flex items-center justify-center bg-black rounded-lg overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://owncast.dilpreet1910.com/embed/video/" // Replace with your video link
+            src= {Live_Stream}
             title="Video Stream"
            
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -34,7 +38,7 @@ const App = () => {
         <div className="bg-[#1E293B] rounded-lg overflow-hidden shadow-lg">
           <iframe
             className="w-full h-full"
-            src="https://owncast.dilpreet1910.com/embed/chat/readwrite/"
+            src={Live_Chat}
             title="Live Chat"
            
             allow="clipboard-write"
