@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gutter {
+    cursor: col-resize; /* Horizontal resizing cursor */
+    background-color: #334155; /* Optional: background color for better visibility */
+    width: 8px; /* Matches the gutterSize in the Split component */
+    height: 100%; /* Ensures it spans the full height */
+    transition: background-color 0.2s ease;
+  }
+  
+  .gutter:hover {
+    background-color: #1E293B; /* Highlight on hover */
+    cursor: col-resize;
+  }
+  
