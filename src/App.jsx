@@ -10,7 +10,7 @@ const App = () => {
     <div className="h-screen w-screen bg-[#0F172A] text-white flex flex-col">
       {/* Header */}
       <header className="flex items-center justify-between p-4 bg-[#1E293B] shadow-md">
-        <h1 className="text-2xl font-bold mx-20">BhartSoft Streaming</h1>
+        <h1 className="text-2xl font-bold mx-20">Bharatsoft Streaming</h1>
       </header>
 
       {/* Main Content */}
